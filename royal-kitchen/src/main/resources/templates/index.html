@@ -1,0 +1,25 @@
+<h1>🍽️ Dileep's Royal Kitchen</h1>
+
+<a href="/category/Biryani">Biryani</a> |
+<a href="/category/Starter">Starters</a> |
+<a href="/category/Dessert">Desserts</a> |
+<a href="/category/Beverage">Beverages</a> |
+<a href="/add">Add Item</a>
+
+<hr>
+
+<h2>Menu</h2>
+
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Category</th>
+<th>Price</th>
+</tr>
+
+<tr th:each="i : ${items}">
+<td th:text="${i.name}"></td>
+<td th:text="${i.category}"></td>
+<td th:text="${i.price}"></td>
+</tr>
+

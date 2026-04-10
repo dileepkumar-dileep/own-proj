@@ -1,0 +1,13 @@
+<h2 th:text="${type}"></h2>
+
+<table border="1">
+<tr>
+<th>Name</th>
+<th>Price</th>
+</tr>
+
+<tr th:each="i : ${items}">
+<td th:text="${i.name}"></td>
+<td th:text="${i.price}"></td>
+</tr>
+
